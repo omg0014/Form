@@ -1,9 +1,5 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
+import React from "https://esm.sh/react@18";
+import ReactDOM from "https://esm.sh/react-dom@18";
 import App from "./App.jsx";
-import { initThemeToggle } from "./theme.js";
 
-initThemeToggle();
-
-const root = document.getElementById("root");
-createRoot(root).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
