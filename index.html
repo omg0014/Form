@@ -1,32 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Form Builder</title>
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- React & Babel -->
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="form-builder/style.css" />
-</head>
-<body class="light">
-  <div class="p-4 flex justify-between flex-wrap gap-2">
-    <h1 class="text-2xl font-bold">Form Builder</h1>
-    <div class="flex gap-2">
-      <button id="themeToggle" class="px-4 py-2 bg-gray-700 text-white rounded">Toggle Theme</button>
-    </div>
-  </div>
-
-  <div id="root" class="p-4"></div>
-
-  <!-- React App -->
-  <script type="text/babel" src="form-builder/app.jsx"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./form-builder/main.jsx"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./form-builder/style.css">
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div id="root"></div>
+  </body>
 </html>
